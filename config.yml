@@ -1,0 +1,7 @@
+---
+connection_properties:
+  host: your.database.domain
+  port: 5432
+  user: your_user
+  password: pass
+  dbname: your_db
