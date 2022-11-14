@@ -12,7 +12,7 @@ where date_end = '{before_date_load}'
 update tmp.cyclones_history
 set date_end = '{before_date_load}'
 from tmp.cyclones_tmp
-where NOT(cyclones_tmp.id = cyclones_history.id and cyclones_tmp.status = cyclones_history.status)
+where NOT(cyclones_tmp.id = cyclones_history.id and cyclones_tmp.status = cyclones_history.status) and date_end is null
 ;
 
 delete from tmp.cyclones_tmp
